@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* font-family: 'Poppins', sans-serif; */
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5.8rem 1.5rem 4rem 1.5rem;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(/images/bg-intro-mobile.png);
+    height: 100vh;
+}
+.title-login{
+    font-size: 27.8px;
+    font-weight: 700;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    line-height: 2.25rem;
+}
+.desc-login{
+    text-align: center;
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    margin-top: 1.5rem;
+    line-height: 1.6rem;
+}
+.area-login{
+    margin-top: 3.8rem;
+    display: flex;
+    flex-direction: column;
+}
+.info-plan{
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 0.55rem;
+    padding: 1.3rem 4.5rem 1rem 4.5rem;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 15.5px;
+    line-height: 1.55rem;
+    box-shadow: 0rem 0.5rem 0.1rem 0rem hsla(249, 10%, 26%, 0.281);
+    
+}
+.info-plan span{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.formulario{
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 1.5rem;
+    border-radius: 0.55rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0rem 0.5rem 0.1rem 0rem hsla(249, 10%, 26%, 0.281);
+
+}
+.formulario input{
+    height: 55.5px;
+    padding-left: 1rem;
+    border: 1.5px solid #e4e4e4;
+    border-radius: 0.35rem;
+    font-size: 15px;
+    font-weight: 700;
+}
+#button-login{
+    padding: 1.3rem 0rem 1rem 0rem;
+    font-size: 15.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: 0rem 0.25rem 0.1rem 0rem hsl(154, 51%, 47%);
+    color: hsl(0, 0%, 100%);
+}
+#button-login:hover{
+    opacity: 0.8;
+}
+.info-login{
+    font-size: 11px;
+    text-align: center;
+    padding: 0rem 1.2rem;
+    color: hsl(246, 25%, 77%);
+    line-height: 1.5rem;
+}
+.info-login span{
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+@media  screen and (min-width: 1024px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 3.8rem 10rem 10rem 10.2rem;
+        column-gap: 2rem;
+        background-image: url(/images/bg-intro-desktop.png);
+
+    }
+    .intro-login{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 3.8rem;
+    }
+    .title-login{
+        font-size: 48.5px;
+        text-align: start;
+        line-height: 3.5rem;
+    }
+    .desc-login{
+        text-align: start;
+    }
+    .formulario{
+        padding: 2.5rem;
+        row-gap: 1.2rem
+    }
+}
