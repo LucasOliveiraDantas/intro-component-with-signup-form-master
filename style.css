@@ -18,7 +18,7 @@ body{
     padding: 5.8rem 1.5rem 4rem 1.5rem;
     background-color: hsl(0, 100%, 74%);
     background-image: url(/images/bg-intro-mobile.png);
-    height: 100vh;
+    
 }
 .title-login{
     font-size: 27.8px;
@@ -109,6 +109,7 @@ body{
         padding: 3.8rem 10rem 10rem 10.2rem;
         column-gap: 2rem;
         background-image: url(/images/bg-intro-desktop.png);
+        height: 100vh;
 
     }
     .intro-login{
